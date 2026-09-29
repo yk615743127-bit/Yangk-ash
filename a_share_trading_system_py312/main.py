@@ -22,6 +22,7 @@ def get_latest_open_trade_date(client: TushareClient) -> str:
     dates = sorted(cal["cal_date"].astype(str).tolist())
     return dates[-1]
 
+print("a")
 
 def main():
     parser = argparse.ArgumentParser(
