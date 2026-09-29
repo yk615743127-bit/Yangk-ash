@@ -1,0 +1,34 @@
+{
+  "history_years": 2,
+  "screen": {
+    "market_cap_min_yi": 30,
+    "market_cap_max_yi": 500,
+    "one_year_stage_rise_max_pct": 40,
+    "current_to_one_year_low_max_pct": 35,
+    "half_year_downtrend_max_drop_pct": 25,
+    "half_year_downtrend_ma_window": 60,
+    "recent_pattern_days": 30
+  },
+  "patterns": {
+    "limit_touch_threshold_pct": 9.5,
+    "fried_board_close_threshold_pct": 9.3,
+    "ant_tree": {
+      "lookback_days": 20,
+      "min_rise_pct": 4,
+      "max_rise_pct": 25,
+      "max_single_day_abs_pct": 6,
+      "min_positive_day_ratio": 0.55,
+      "max_volume_cv": 0.80
+    },
+    "bottom_huge_turnover": {
+      "lookback_days": 20,
+      "price_to_one_year_low_max_pct": 20,
+      "turnover_multiple_vs_20d_median": 2.0,
+      "turnover_rate_min_pct": 3.0
+    }
+  },
+  "tushare": {
+    "sleep_seconds_between_calls": 0.15,
+    "daily_basic_batch_days": 1
+  }
+}
