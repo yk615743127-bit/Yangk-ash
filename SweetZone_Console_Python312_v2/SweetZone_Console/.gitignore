@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+local_settings.json
+workspace/
+*.db*
+*.log
