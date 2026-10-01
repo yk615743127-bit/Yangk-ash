@@ -34,7 +34,7 @@ def load_config():
     if cfg['history_years'] < 2 or cfg['buffer_days'] < 0:
         raise ValueError('历史范围至少两年，缓冲天数不能小于零')
     api, s = cfg['api'], cfg['screen']
-    if api['interval_seconds'] < 1.3 or api['trade_cal_interval_seconds'] < 61:
+    if api['interval_seconds'] < 0.3 or api['trade_cal_interval_seconds'] < 61:
         raise ValueError('正常接口间隔至少1.3秒，trade_cal间隔至少61秒')
     if not 1 <= api['page_size'] <= 3000:
         raise ValueError('page_size须在1至3000之间')

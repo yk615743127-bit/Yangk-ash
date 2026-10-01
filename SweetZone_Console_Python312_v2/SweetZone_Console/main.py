@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-import sys
-print("当前Python路径：", sys.executable)
+#import sys
+#print("当前Python路径：", sys.executable)
 
 import argparse
 import sys
