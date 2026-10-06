@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-#1006
+#1007
 
 import argparse
 import sys
