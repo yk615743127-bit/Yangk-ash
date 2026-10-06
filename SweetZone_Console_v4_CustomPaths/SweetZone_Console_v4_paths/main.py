@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+#1006
+
 import argparse
 import sys
 import uuid
