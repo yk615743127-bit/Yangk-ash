@@ -1,0 +1,22 @@
+﻿# 指定路径版使用说明
+
+本包在v4基础上只调整目录，选股条件和限频行为不变。
+
+- 数据目录：D:\Stock\AI\Data\StickData
+- 输出根目录：D:\Stock\AI\Data\output
+- 每次输出自动放到独立时间文件夹，避免覆盖。
+- 目录不存在时自动创建；没有权限时会报错，不会悄悄改到其他目录。
+
+使用步骤：
+1. 完整解压到新的代码目录，用PyCharm打开main.py所在文件夹。
+2. 将原项目.env复制到main.py旁边，继续使用原Python解释器。
+3. 停止旧程序、关闭数据库软件，再将原数据目录中的market.db、risk_reviews.csv、request_clock.json等复制到指定数据目录。若关闭后仍存在market.db-wal、market.db-shm，须一并保留复制。请保留原件备份。
+4. 运行main.py。已预置local_settings.json，无需再次填写数据路径。
+
+程序不会自动迁移旧数据；若未复制旧库，将在新目录创建空库并下载。
+请不要用旧local_settings.json覆盖包内配置，也不要只复制main.py。
+旧README中的默认workspace/output描述以本文件为准。last_run.json、run.lock等运行管理文件仍在数据目录，筛选结果与本次run_summary等在输出目录。
+本包为Windows指定路径版。路径拼写StickData按用户原文保留。
+风险限制：减持计划和解禁完成状态仍需公告核验，未核验不进入最终通过名单。具体见README.md。
+
+加程序吗，当因为超时终止时，继续运行程序，重试次数不超过5次

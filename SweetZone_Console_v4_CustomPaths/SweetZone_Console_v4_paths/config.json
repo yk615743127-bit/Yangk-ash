@@ -1,0 +1,47 @@
+{
+  "history_years": 2,
+  "buffer_days": 45,
+  "ready_hour_shanghai": 18,
+  "api": {
+    "interval_seconds": 0.3,
+    "trade_cal_interval_seconds": 61,
+    "page_size": 3000,
+    "timeout_seconds": 60
+  },
+  "screen": {
+    "year_days": 250,
+    "half_days": 120,
+    "pattern_days": 30,
+    "market_cap_min_yi": 30,
+    "market_cap_max_yi": 500,
+    "max_stage_rise": 0.4,
+    "max_low_distance": 0.35,
+    "downtrend_ma_days": 60,
+    "downtrend_slope_days": 20,
+    "downtrend_low_days": 20,
+    "downtrend_low_tolerance": 0.01,
+    "limit_price_tolerance": 0.005,
+    "ant": {
+      "days": 20,
+      "min_rise": 0.04,
+      "max_rise": 0.25,
+      "positive_ratio": 0.55,
+      "max_abs_daily_return": 0.06,
+      "ma_slope_days": 5,
+      "max_volume_cv": 0.8
+    },
+    "giant": {
+      "max_low_distance": 0.2,
+      "volume_days": 20,
+      "volume_multiple": 2.0,
+      "min_turnover_pct": 3.0
+    }
+  },
+  "risk": {
+    "lookback_months": 6,
+    "unlock_forward_months": 6
+  },
+  "audit": {
+    "require_standard": true
+  }
+}
